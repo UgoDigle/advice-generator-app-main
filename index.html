@@ -3,15 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
     <meta
       name="description"
       content="Use our free app for a good piece of advice! Just click the button to obtain a random useful advice."
     />
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet" />
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -20,15 +17,24 @@
     />
     <link rel="stylesheet" href="style.css" />
     <title>Frontend Mentor Challenge | Advice generator app by Ugo Diglé</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
-  <body>
-    Advice #<!-- Advice ID goes here -->
-
-    "<!-- Advice text goes here -->"
-
-    <div class="attribution">
+  <body class="vh-100 d-flex flex-column justify-content-center align-items-center">
+    <div class="card mt-auto">
+      <p class="advice_number p-3">Advice # <span class="advice_id"></span></p>
+      <p class="p-3">"<span class="advice_text">Example test</span>"</p>
+      <p>
+        <img
+          class="img-fluid d-none d-sm-block p-3"
+          src="/images/pattern-divider-desktop.svg"
+          alt="divider for desktop"
+        />
+        <img class="img-fluid d-sm-none p-3" src="/images/pattern-divider-mobile.svg" alt="divider for mobile" />
+      </p>
+      <button id="generate" type="button" class="btn">
+        <img class="img-fluid" src="/images/icon-dice.svg" alt="Dice icon" />
+      </button>
+    </div>
+    <div class="attribution mt-auto">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
       <a href="https://github.com/UgoDigle" target="blank">Ugo Diglé</a>.
     </div>
@@ -37,5 +43,6 @@
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
+    <script src="/script.js"></script>
   </body>
 </html>

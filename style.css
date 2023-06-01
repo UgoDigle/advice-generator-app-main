@@ -1,38 +1,41 @@
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
 
-# Front-end Style Guide
+body {
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+  background-color: hsl(218, 23%, 16%);
+}
 
-## Layout
+.card {
+  background-color: hsl(217, 19%, 24%);
+  align-items: center;
+  color: hsl(193, 38%, 86%);
+  font-size: 28px;
+}
 
-The designs were created to the following widths:
+.advice_number {
+  color: hsl(150, 100%, 66%);
+  text-transform: uppercase;
+  font-size: medium;
+}
 
-- Mobile: 375px
-- Desktop: 1440px
+#generate {
+  border: 1px transparent;
+  border-radius: 100%;
+  background-color: hsl(150, 100%, 66%);
+  position: relative;
+  top: 20px;
+}
 
-## Colors
+#generate:hover {
+  box-shadow: 0 0 25px hsl(150, 100%, 66%);
+}
 
-### Primary
-
-- Light Cyan: hsl(193, 38%, 86%)
-- Neon Green: hsl(150, 100%, 66%)
-
-### Neutral
-
-- Grayish Blue: hsl(217, 19%, 38%)
-- Dark Grayish Blue: hsl(217, 19%, 24%)
-- Dark Blue: hsl(218, 23%, 16%)
-
-## Typography
-
-### Body Copy
-
-- Font size (quote): 28px
-
-### Font
-
-- Family: [Manrope](https://fonts.google.com/specimen/Manrope)
-- Weights: 800
-
-
-font-family: 'Manrope', sans-serif;
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: hsl(193, 38%, 86%);
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
